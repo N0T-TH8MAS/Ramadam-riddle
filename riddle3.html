@@ -6,23 +6,17 @@
 <title>Riddle 3</title>
 <style>
 body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f5fffa; }
+.clickable { color: blue; cursor: pointer; text-decoration: underline; }
 </style>
 </head>
 <body>
-<h1>Final Riddle!</h1>
-<p>The more you take, the more you leave behind. What am I?</p>
-<input type="text" id="answer" placeholder="Type here">
-<button onclick="checkAnswer()">Submit</button>
+<h1>Final Challenge!</h1>
+<p>You see three stones in front of you: <span class="clickable" onclick="win()">Moon</span>, <span class="clickable">Sun</span>, <span class="clickable">Star</span></p>
 
 <script>
-function checkAnswer() {
-    const ans = document.getElementById('answer').value.toLowerCase();
-    if(ans === 'footsteps') {
-        alert('Congratulations! You solved all the riddles!');
-        window.location.href = 'index.html'; // Back to start
-    } else {
-        alert('Try again!');
-    }
+function win() {
+    alert('Congratulations! You solved the adventure!');
+    window.location.href = 'index.html'; // Go back to start
 }
 </script>
 </body>
