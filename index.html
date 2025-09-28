@@ -6,25 +6,18 @@
 <title>Riddle Adventure</title>
 <style>
 body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f0f8ff; }
-a { text-decoration: none; color: #0077cc; font-weight: bold; }
+.hidden { display: none; } /* Hidden clue */
 </style>
 </head>
 <body>
 <h1>Welcome to the Riddle Adventure!</h1>
-<p>Follow the clues and unlock each page.</p>
-<p>Riddle 1: I fly without wings, I cry without eyes. Wherever I go, darkness flies. Where am I?</p>
-<input type="text" id="answer" placeholder="Type your answer here">
-<button onclick="checkAnswer()">Submit</button>
+<p>You are at the edge of a mysterious forest.</p>
+<p>Look closely at the page—sometimes things aren’t what they seem.</p>
 
-<script>
-function checkAnswer() {
-    const ans = document.getElementById('answer').value.toLowerCase();
-    if(ans === 'cloud') {
-        window.location.href = 'riddle2.html';
-    } else {
-        alert('Try again!');
-    }
-}
-</script>
+<!-- Hidden clue in HTML for players to inspect -->
+<div class="hidden">Next page is riddle2.html</div>
+
+<p>Tip: Inspect Element might reveal your next path 😉</p>
 </body>
 </html>
+
