@@ -6,24 +6,16 @@
 <title>Riddle 2</title>
 <style>
 body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #fff0f5; }
-input, button { font-size: 1em; padding: 5px; }
+.hidden-link { color: #fff; text-decoration: none; } /* white link blends with background */
 </style>
 </head>
 <body>
-<h1>Riddle 2</h1>
-<p>I speak without a mouth and hear without ears. I have nobody, but I come alive with wind. What am I?</p>
-<input type="text" id="answer" placeholder="Your answer">
-<button onclick="checkAnswer()">Submit</button>
+<h1>You enter the enchanted clearing</h1>
+<p>There’s a strange glow here… but nothing seems clickable.</p>
 
-<script>
-function checkAnswer() {
-    const ans = document.getElementById('answer').value.toLowerCase();
-    if(ans === 'echo') {
-        window.location.href = 'riddle3.html';
-    } else {
-        alert('Nope, think again!');
-    }
-}
-</script>
+<!-- Hidden link -->
+<a href="riddle3.html" class="hidden-link">Follow the light</a>
+
+<p>Hint: Maybe try highlighting or changing the background color?</p>
 </body>
 </html>
