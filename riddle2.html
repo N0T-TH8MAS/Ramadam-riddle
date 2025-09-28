@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 2</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #121212; color: #eee; text-align: center; padding: 50px; }
+  input, button { padding: 10px; margin: 10px; }
+</style>
+</head>
+<body>
+<h1>Riddle 2</h1>
+<p>I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?</p>
+
+<input type="text" id="answer2" placeholder="Type your answer">
+<button onclick="checkAnswer()">Submit</button>
+
+<script>
+function checkAnswer() {
+    const ans = document.getElementById('answer2').value.toLowerCase().trim();
+    if(ans === "map") {
+        window.location.href = "final.html";
+    } else {
+        window.location.href = "wrong2.html";
+    }
+}
+</script>
+</body>
+</html>

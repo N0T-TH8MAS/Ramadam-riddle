@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle Challenge</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #121212; color: #eee; text-align: center; padding: 50px; }
+  input, button { padding: 10px; margin: 10px; }
+</style>
+</head>
+<body>
+<h1>Welcome to the Riddle Challenge!</h1>
+<p>Riddle 1: I speak without a mouth and hear without ears. I have nobody, but I come alive with wind. What am I?</p>
+
+<input type="text" id="answer" placeholder="Type your answer">
+<button onclick="checkAnswer()">Submit</button>
+
+<script>
+function checkAnswer() {
+    const ans = document.getElementById('answer').value.toLowerCase().trim();
+    if(ans === "echo") {
+        window.location.href = "riddle2.html";
+    } else {
+        window.location.href = "wrong1.html";
+    }
+}
+</script>
+</body>
+</html>
