@@ -5,24 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Riddle 2</title>
 <style>
-  body { font-family: Arial, sans-serif; background: #121212; color: #eee; text-align: center; padding: 50px; }
-  input, button { padding: 10px; margin: 10px; }
+body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #fff0f5; }
+input, button { font-size: 1em; padding: 5px; }
 </style>
 </head>
 <body>
 <h1>Riddle 2</h1>
-<p>I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?</p>
-
-<input type="text" id="answer2" placeholder="Type your answer">
+<p>I speak without a mouth and hear without ears. I have nobody, but I come alive with wind. What am I?</p>
+<input type="text" id="answer" placeholder="Your answer">
 <button onclick="checkAnswer()">Submit</button>
 
 <script>
 function checkAnswer() {
-    const ans = document.getElementById('answer2').value.toLowerCase().trim();
-    if(ans === "map") {
-        window.location.href = "final.html";
+    const ans = document.getElementById('answer').value.toLowerCase();
+    if(ans === 'echo') {
+        window.location.href = 'riddle3.html';
     } else {
-        window.location.href = "wrong2.html";
+        alert('Nope, think again!');
     }
 }
 </script>
