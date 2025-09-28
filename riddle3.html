@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 3</title>
+<style>
+body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f5fffa; }
+</style>
+</head>
+<body>
+<h1>Final Riddle!</h1>
+<p>The more you take, the more you leave behind. What am I?</p>
+<input type="text" id="answer" placeholder="Type here">
+<button onclick="checkAnswer()">Submit</button>
+
+<script>
+function checkAnswer() {
+    const ans = document.getElementById('answer').value.toLowerCase();
+    if(ans === 'footsteps') {
+        alert('Congratulations! You solved all the riddles!');
+        window.location.href = 'index.html'; // Back to start
+    } else {
+        alert('Try again!');
+    }
+}
+</script>
+</body>
+</html>
