@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riddle 3</title>
+<title>Riddle Adventure - Final Puzzle</title>
 <style>
 body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f5fffa; }
 .clickable { color: blue; cursor: pointer; text-decoration: underline; }
@@ -11,12 +11,16 @@ body { font-family: Arial, sans-serif; text-align: center; padding: 50px; backgr
 </head>
 <body>
 <h1>Final Challenge!</h1>
-<p>You see three stones in front of you: <span class="clickable" onclick="win()">Moon</span>, <span class="clickable">Sun</span>, <span class="clickable">Star</span></p>
+<p>Three stones lie before you:</p>
+<p>
+<span class="clickable" onclick="nextPage()">Moon</span> | 
+<span class="clickable">Sun</span> | 
+<span class="clickable">Star</span>
+</p>
 
 <script>
-function win() {
-    alert('Congratulations! You solved the adventure!');
-    window.location.href = 'index.html'; // Go back to start
+function nextPage() {
+    window.location.href = "final.html";
 }
 </script>
 </body>
