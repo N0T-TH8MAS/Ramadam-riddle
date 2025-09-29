@@ -15,7 +15,7 @@ a { color: #00ccff; text-decoration: none; font-weight: bold; }
 <h1>The Final Challenge Awaits!</h1>
 <p>Watch the video below carefully:</p>
 
-<!-- Example video (Rick Astley for fun!) -->
+<!-- Example video (Rick Astley, 3:33 long, just for example) -->
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
 title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
@@ -29,11 +29,10 @@ title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 <script>
 function checkTimestamp() {
     const userInput = document.getElementById('timestamp').value.trim();
-    const correct = ["00:52","0:52"]; // Timestamp where phrase occurs
+    const correct = ["00:52","0:52"]; // Example timestamp
     if (correct.includes(userInput)) {
         alert("✅ Correct! You completed the adventure!");
-        // Optional: redirect to "You Win" page
-        // window.location.href = "win.html";
+        window.location.href = "index.html"; // Loop back to start
     } else {
         alert("❌ Not quite. Try again!");
     }
