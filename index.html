@@ -3,21 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Riddle Adventure</title>
+<title>Riddle Adventure - Start</title>
 <style>
 body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #f0f8ff; }
-.hidden { display: none; } /* Hidden clue */
+a { text-decoration: none; color: #0077cc; font-weight: bold; display: block; margin: 20px 0; }
+.hidden-link { color: #f0f8ff; } /* hidden but clickable */
 </style>
 </head>
 <body>
 <h1>Welcome to the Riddle Adventure!</h1>
-<p>You are at the edge of a mysterious forest.</p>
-<p>Look closely at the page—sometimes things aren’t what they seem.</p>
+<p>You are at the edge of a mysterious forest. Which path will you take?</p>
 
-<!-- Hidden clue in HTML for players to inspect -->
-<div class="hidden">Next page is riddle2.html</div>
-
-<p>Tip: Inspect Element might reveal your next path 😉</p>
+<a href="riddle2.html" class="hidden-link">Follow the shadow</a>
+<a href="wrong1.html">Go left into the trees</a>
 </body>
 </html>
 
