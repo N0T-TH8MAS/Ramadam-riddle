@@ -6,19 +6,38 @@
 <title>The Final Challenge</title>
 <style>
 body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #222; color: #eee; }
-a { color: #00ccff; font-size: 1.2em; font-weight: bold; text-decoration: none; }
+input { padding: 10px; font-size: 1em; margin: 10px 0; }
+button { padding: 10px 20px; font-size: 1em; cursor: pointer; }
+a { color: #00ccff; text-decoration: none; font-weight: bold; }
 </style>
 </head>
 <body>
 <h1>The Final Challenge Awaits!</h1>
-<p>Your journey leads you to a mysterious recording...</p>
+<p>Watch the video below carefully:</p>
 
-<!-- Replace with any long video -->
-<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch the video here</a></p>
+<!-- Example video (Rick Astley for fun!) -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
 <p>The question:</p>
-<p><em>At what timestamp does <strong>[CHARACTER NAME]</strong> say <strong>“[PHRASE]”</strong>?</em></p>
+<p>At what timestamp does <strong>Rick Astley</strong> say <strong>“Never gonna give you up”</strong>?</p>
 
-<p>Write down your answer—you’ll need it to prove you’ve solved the quest!</p>
+<input type="text" id="timestamp" placeholder="Enter timestamp (mm:ss)">
+<br>
+<button onclick="checkTimestamp()">Submit</button>
+
+<script>
+function checkTimestamp() {
+    const userInput = document.getElementById('timestamp').value.trim();
+    const correct = ["00:52","0:52"]; // Timestamp where phrase occurs
+    if (correct.includes(userInput)) {
+        alert("✅ Correct! You completed the adventure!");
+        // Optional: redirect to "You Win" page
+        // window.location.href = "win.html";
+    } else {
+        alert("❌ Not quite. Try again!");
+    }
+}
+</script>
 </body>
 </html>
